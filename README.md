@@ -2,7 +2,7 @@ We have created a free tool to convert Opencart data into Shopify-compatible for
 You can use this tool to convert your product, customer, and order data into files that are ready to import into Shopify.
 Once converted, you can simply upload the new data files to Shopify.
 
-Please see the detailed instructions at
+Please see the detailed instructions at: **https://firstwireapp.com/blog/opencart-to-shopify-migration-free-tool/**
 
 See the code and guide below.
 
@@ -34,16 +34,16 @@ Press Enter and wait a few seconds for it to finish. You only need to do this on
 
 **Step 3 — Save Your Files in One Folder**
 
-Create a new folder on your Desktop (for example, "OC-TO-SHOPIFY"). 
-Inside it, create another folder called "input" — this is where all your PrestaShop table exports will go. 
-Your folder structure should look like this: OC_TO_SHOPIFY/
- OC_to_shopify_converter.py 
+Create a new folder on your Desktop (for example, "OC_to_Shopify"). 
+Inside it, create another folder called "input" — this is where all your Opencart exports CSV files will go. 
+Your folder structure should look like this: OC_to_Shopify/
+ oc_to_shopify_converter.py 
  input/ 
   oc_products.csv 
   oc_customers.csv 
   oc_orders.csv 
    
-Place the script file directly inside "OC-TO-SHOPIFY", and place your Opencart CSV exports (one CSV per database table, named exactly like the table) inside the "input" folder:
+Place the script file directly inside "OC_to_Shopify", and place your Opencart CSV exports (one CSV per database table, named exactly like the table) inside the "input" folder:
 
 You do not need every file. At minimum:
 
@@ -104,8 +104,6 @@ Shopify does not allow orders to be imported directly. You need the free Matrixi
 
 Problem - Solution
 
-Problem - Solution
-
 “python is not recognized” Reinstall Python and make sure to tick “Add Python to PATH”
 
 “No module named pandas” Run: pip install pandas
@@ -119,7 +117,7 @@ Order import fails Make sure you are using the Matrixify app, not Shopify's buil
 Quick Reference — Every Time You Run It
 
 Open terminal in your project folder
-Type: cd Desktop/OC-TO-SHOPIFY
+Type: cd Desktop/OC-to-Shopify
 Type: python OC_to_shopify_converter.py --type all
 Find your results in the shopify_output folder
 
